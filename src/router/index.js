@@ -29,7 +29,13 @@ const routes = [
     name: 'Carro',
 
     component: () => import('../views/CarroView.vue')
-  }
+  },
+  {
+    path: '/carro-form/:id',
+    name: 'carro-form',
+
+    component: () => import('../views/CarroFormView.vue')
+  },
 ]
 
 const router = createRouter({

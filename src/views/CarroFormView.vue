@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Form marcas</h1>
+    <h1>Form carros</h1>
     <p>{{$route.params.id}}</p>
     <button @click="voltar()">Voltar</button>
   </div>

@@ -11,7 +11,7 @@
             <tr v-for="m in marcas" :key="m.Id">
                 <th>{{m.Id}}</th>
                 <th>{{m.nome}}</th>
-                <th> <a href="#" @click="editar(m)">Editar</a> </th>
+                <th> <a href="javascript:void(0)" @click="editar(m)">Editar</a> </th>
             </tr>
         </table>
 
