@@ -21,21 +21,18 @@
 
 
 <script>
+import axios from 'axios'
 
 export default {
     data() {
         return {
-            marcas: [
-                {
-                    id:1,
-                    nome: 'Hyundai'
-                },
-                {
-                    id:2,
-                    nome: 'Ford'
-                },
-            ]
+            marcas: []
         }
+    },
+    mounted(){
+        axios
+            .get('https://carros-app-example.herokuapp.com/marca')
+            .then(resp => this.marcas = resp.data)
     },
     methods: {
         editar(marca){
